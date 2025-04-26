@@ -1,0 +1,89 @@
+
+#contents .today-books{
+  height: 360px;
+}
+
+#contents .today-books .body{
+  height: 300px;
+  display: flex;
+  gap: 0 50px;
+}
+
+#contents .today-books .book-info{
+  width: 640px;
+  display: flex;
+  position: relative;
+  gap: 30px;
+}
+
+#contents .book-info .figure{
+  width: 210px;
+  height: 300px;
+}
+
+#contents .book-info .figure img{
+  width: 100%;
+}
+
+#contents .book-info figcaption{
+  width: 400px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#contents .book-info .figcation-inner .title{
+  font-weight: 700;
+  font-size: 25px;
+}
+
+#contents .book-info .figcation-inner .author{
+  font-size: 14px;
+  color: #aaa;
+}
+
+#contents .book-info .figcation-inner .oneline-review{
+  margin-top: 15px;
+  display: flex;
+}
+
+#contents .book-info .oneline-review h5{
+  color: #32CD32;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#contents .book-info .figcation-inner .review{
+  font-size: 14px;
+  color: #666;
+}
+
+#contents .book-info .figcation-inner .price{
+  display: inline-block;
+  margin-top: 30px;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+#contents .book-info .btn{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 135px;
+  height: 45px;
+  border-radius: 15px;
+  background-color: rgba(50,205,50,0.8);
+  font-size: 20px;
+  font-weight: 900;
+  color: rgba(139,69,19,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contents iframe{
+  display: block;
+  width: 510px;
+  margin-bottom: 0;
+  height: 300px;
+}

@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WeBook</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /> 
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/mainImg.css">
+  <link rel="stylesheet" href="./css/contents.css">
+  <link rel="stylesheet" href="./css/con-author.css">
+  <link rel="stylesheet" href="./css/con-bestseller.css">
+  <link rel="stylesheet" href="./css/con-todayBook.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/hidden-div.css">
+</head>
+<body>
+  <div id="wrap">
+    <header id="header">
+      <nav class="header-top">
+        <div class="inner">
+          <div class="trending-div">
+            <ul class="trending">
+              <li>
+                <div class="grade-box">1</div>
+                <span>파친코</span>
+              </li>
+              <li>
+                <div class="grade-box">2</div>
+                <span>달러구트 꿈 백화점</span>
+              </li>
+              <li>
+                <div class="grade-box">3</div>
+                <span>지구 끝의 온실</span>
+              </li>
+              <li>
+                <div class="grade-box">4</div>
+                <span>아몬드</span>
+              </li>
+              <li>
+                <div class="grade-box">5</div>
+                <span>불편한 편의점</span>
+              </li>
+              <li>
+                <div class="grade-box">6</div>
+                <span>소크라테스 익스프레스</span>
+              </li>
+              <li>
+                <div class="grade-box">7</div>
+                <span>미드나잇 라이브러리</span>
+              </li>
+              <li>
+                <div class="grade-box">8</div>
+                <span>부의 대이동</span>
+              </li>
+              <li>
+                <div class="grade-box">9</div>
+                <span>인생은 실전이다</span>
+              </li>
+              <li>
+                <div class="grade-box">10</div>
+                <span>트랜드 코리아 2025</span>
+              </li>
+            </ul>
+          </div>
+          <ul class="login-nav">
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">마이페이지</a></li>
+            <li><a href="#">고객센터</a></li>
+            <li><a href="#">장바구니(0)</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="header-mid">
+        <div class="inner">
+          <div class="logo">
+            <h1><a href="#"><img src="./images/logo.png" alt="logo이미지"></a></h1>
+          </div>
+          <div class="search">
+            <div class="category">
+              <span>통합검색</span>
+              <span class="btn">></span>
+            </div>
+            <input type="text" placeholder="검색어를 입력하세요" class="text-input">
+            <div class="btn">
+              <span class="material-symbols-outlined">
+                search
+              </span>
+            </div>
+          </div>
+          <div class="ad-banner">
+            <h3><img src="./images/ad-banner-1.png" alt=""></h3>
+          </div>
+        </div>
+      </div>
+      <nav class="header-bot">
+        <div class="inner">
+          <ul class="main-nav">
+            <li class="first-li">분야보기</li>
+            <li class="main-li">베스트작품</li>
+            <li class="main-li">신상품</li>
+            <li class="main-li">이벤트</li>
+            <li class="main-li">만남의공간</li>
+            <li class="sub-li">개인맞춤독서</li>
+            <li class="sub-li">이달의특가</li>
+            <li class="sub-li">바로펀딩</li>
+          </ul>
+          <div class="ad-text">
+            <span>신학기 기념 20~80%의 특가!</span>
+          </div>
+        </div>
+      </nav>
+      <div class="hidden">
+        <div class="inner">
+          <div class="trending-hidden-div">
+            <h4>실시간 검색어</h4>
+            <ul class="trending-hidden">
+              <li>
+                <div class="grade-box">1</div>
+                <span>파친코</span>
+              </li>
+              <li>
+                <div class="grade-box">2</div>
+                <span>달러구트 꿈 백화점</span>
+              </li>
+              <li>
+                <div class="grade-box">3</div>
+                <span>지구 끝의 온실</span>
+              </li>
+              <li>
+                <div class="grade-box">4</div>
+                <span>아몬드</span>
+              </li>
+              <li>
+                <div class="grade-box">5</div>
+                <span>불편한 편의점</span>
+              </li>
+              <li>
+                <div class="grade-box">6</div>
+                <span>소크라테스 익스프레스</span>
+              </li>
+              <li>
+                <div class="grade-box">7</div>
+                <span>미드나잇 라이브러리</span>
+              </li>
+              <li>
+                <div class="grade-box">8</div>
+                <span>부의 대이동</span>
+              </li>
+              <li>
+                <div class="grade-box">9</div>
+                <span>인생은 실전이다</span>
+              </li>
+              <li>
+                <div class="grade-box">10</div>
+                <span>트랜드 코리아 2025</span>
+              </li>
+            </ul>
+          </div>
+          <div class="resent-hidden-div">
+            <div class="resent-hidden">
+              <h4>최근 검색어</h4>
+              <ul>
+                <li>수능특강<a href="#">×</a></li>
+                <li>미키14<a href="#">×</a></li>
+                <li>성경<a href="#">×</a></li>
+                <li>초보자도 하는 5분요리 : 볶.<a href="#">×</a></li>
+                <li>How to happy?<a href="#">×</a></li>
+                <li>대학수학<a href="#">×</a></li>
+                <li>마더텅 국어 비문학<a href="#">×</a></li>
+                <li>시간 도둑<a href="#">×</a></li>
+                <li>폭풍의 언덕<a href="#">×</a></li>
+                <li>요리의 기본 : 조리법 편<a href="#">×</a></li>
+              </ul>
+            </div>
+            <div class="recommand-hidden">
+              <h4>추천 상품</h4>
+              <ul>
+                <li>
+                  <figure>
+                    <img src="./images/recommand-1.1.png" alt="">
+                    <figcaption>
+                      <span>[국내도서]</span><h4>소년이 온다</h4>
+                      <p>
+                        한강 | 장편소설 | 2014년 5월 <br>
+                        <span>13,500원</span>
+                      </p>
+                    </figcaption>
+                  </figure>
+                </li>
+                <li>
+                  <figure>
+                    <img src="./images/recommand-1.2.png" alt="">
+                    <figcaption>
+                      <span>[해외도서]</span><h4>Happy Day (Uplifting Editions): A Bouquet in a Book </h4>
+                      <p>
+                        몰리 해치 | 팝업북 | 2018년 2월 <br>
+                        <span>15,300원</span>
+                      </p>
+                    </figcaption>
+                  </figure>
+                </li>
+                <li>
+                  <figure>
+                    <img src="./images/recommand-1.3.png" alt="">
+                    <figcaption>
+                      <span>[국내도서]</span><h4>어른의 품격을 채우는 100일 필사 노트</h4>
+                      <p>
+                        김종원 | 자기개발 | 2025년 3월 <br>
+                        <span>18,000원</span>
+                      </p>
+                    </figcaption>
+                  </figure>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-hidden">
+              <a href="#">닫기 ×</a>
+            </div>
+          </div>
+          <div class="snipper-hidden-div">
+            <div class="snipper-hidden">
+              <ul>
+                <li>수레바퀴 아래서</li>
+                <li>수학귀신</li>
+                <li>수상한 그녀</li>
+                <li>수많은 별들이 안아 주던 밤</li>
+                <li>수박 수영장</li>
+                <li>수의사 헤리엇</li>
+                <li>수리부엉이 공부법</li>
+                <li>수학이 필요한 순간</li>
+                <li>수고했어, 오늘도</li>
+                <li>수상한 친구들</li>
+                <li>수련</li>
+                <li>수수께끼 풀듯이 살아가는 마을</li>
+                <li>수잔 송가</li>
+                <li>수전증</li>
+              </ul>
+            </div>
+            <div class="recommand-hidden">
+              <h4>추천 상품</h4>
+              <ul>
+                <li>
+                  <figure>
+                    <img src="./images/recommand-2.1.png" alt="">
+                    <figcaption>
+                      <span>[해외도서]</span><h4>수레바퀴 아래서</h4>
+                      <p>
+                        헤르만 헤세 | 장편 소설 | 1906년<br>
+                        <span>7,200원</span>
+                      </p>
+                    </figcaption>
+                  </figure>
+                </li>
+                <li>
+                  <figure>
+                    <img src="./images/recommand-2.2.png" alt="">
+                    <figcaption>
+                      <span>[해외도서]</span><h4>수학 귀신</h4>
+                      <p>
+                        한스 마그누스 엔첸스베르거 | 수학 / 과학 | 2019년 8월<br>
+                        <span>15,300원</span>
+                      </p>
+                    </figcaption>
+                  </figure>
+                </li>
+                <li>
+                  <figure>
+                    <img src="./images/recommand-2.3.png" alt="">
+                    <figcaption>
+                      <span>[국내도서]</span><h4>수상한 그녀</h4>
+                      <p>
+                        이상민 | 장편 소설 | 2014년 1월<br>
+                        <span>11,800원</span>
+                      </p>
+                    </figcaption>
+                  </figure>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-hidden">
+              <a href="#">닫기 ×</a>
+            </div>
+          </div>
+          <div class="category-hidden-div">
+            <ul>
+              <li>통합검색</li>
+              <li>국내도서</li>
+              <li>외국도서</li>
+              <li>e-book</li>
+              <li>중고거래</li>
+              <li>티켓</li>
+              <li>문구/Gift</li>
+              <li>음반/블루레이</li>
+              <li>굿즈</li>
+            </ul>
+          </div>
+          <div class="field-hidden-div">
+            <div class="head">
+              <ul>
+                <li class="select">국내도서</li>
+                <li>외국도서</li>
+                <li>e-book</li>
+                <li>중고거래</li>
+                <li>티켓</li>
+                <li>문구/Gift</li>
+                <li>음반/블루레이</li>
+                <li>굿즈</li>
+              </ul>
+            </div>
+            <div class="body">
+              <a href="#">국내도서 ></a>
+              <ul>
+                <li>
+                  <h5>📖 문학 & 소설</h5>
+                  <ul>
+                    <li>소설</li>
+                    <li>시/에세이</li>
+                    <li>역사소설</li>
+                    <li>SF/판타지</li>
+                    <li>로맨스</li>
+                    <li>추리/미스터리</li>
+                    <li>무협/라이트노벨</li>
+                  </ul>
+                </li>
+                <li>
+                  <h5>📚 인문 & 사회</h5>
+                  <ul>
+                    <li>철학/사상</li>
+                    <li>역사/문화</li>
+                    <li>정치/사회</li>
+                    <li>예술/대중문화</li>
+                  </ul>
+                </li>
+                <li>
+                  <h5>💸경제 & 자기계발</h5>
+                  <ul>
+                    <li>경제/경영</li>
+                    <li>자기계발</li>
+                    <li>부당산/제테크</li>
+                  </ul>
+                </li>
+                <li>
+                  <h5>🎨취미 & 실용</h5>
+                  <ul>
+                    <li>취미/실용/스포츠</li>
+                    <li>여행/지리</li>
+                    <li>요리/레시피</li>
+                    <li>건강/다이어트</li>
+                    <li>원예/가드닝</li>
+                  </ul>
+                </li>
+                <li>
+                  <h5>‍🎓학문 & 과학</h5>
+                  <ul>
+                    <li>인문학 일반</li>
+                    <li>과학/공학</li>
+                    <li>심리학</li>
+                  </ul>
+                </li>
+                <li>
+                  <h5>🧸어린이 & 청소년</h5>
+                  <ul>
+                    <li>유아동 그림책</li>
+                    <li>어린이 문학</li>
+                    <li>청소년 책</li>
+                  </ul>
+                </li>
+                <li>
+                  <h5>🧑‍🏫 교육 & 외국어</h5>
+                  <ul>
+                    <li>외국어 학습서</li>
+                    <li>자기주도학습</li>
+                  </ul>
+                </li>
+                <li>
+                  <h5>🙏어린이 & 청소년</h5>
+                  <ul>
+                    <li>종교</li>
+                    <li>명상/마음챙김</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="main-img">
+      <ul class="img-list">
+        <li>
+          <div class="inner"><img src="./images/main-img1.png" alt=""></div>
+        </li>
+        <li>
+          <div class="inner"><img src="./images/main-img2.png" alt=""></div>
+        </li>
+        <li>
+          <div class="inner"><img src="./images/main-img3.png" alt=""></div>
+        </li>
+        <li>
+          <div class="inner"><img src="./images/main-img4.png" alt=""></div>
+        </li>
+        <li>
+          <div class="inner"><img src="./images/main-img5.png" alt=""></div>
+        </li>
+        <li>
+          <div class="inner"><img src="./images/main-img6.png" alt=""></div>
+        </li>
+      </ul>
+      <div class="prep-btn"><</div>
+      <div class="counter">
+        <span class="dot-indicator"><span class="dot-now">●</span>●●●●●</span> <br>
+        <span class="slide-number">1/6</span>
+      </div>
+      <div class="next-btn">></div>
+    </section>
+    <section id="contents">
+      <section class="today-books">
+        <div class="inner">
+          <div class="head">
+            <h3>오늘의 도서</h3>
+            <span>2025.04.08</span>
+            <a href="#">더보기 +</a>
+          </div>
+          <div class='body'>
+            <article class="book-info">
+              <figure>
+                <img src="./images/book-sample-1.1.png" alt="">
+              </figure>
+              <figcaption>
+                <div class="figcation-inner">
+                  <h4 class="title">완벽이라는 중독 : 불안한 완벽.</h4>
+                  <span class="author">토미스 커런</span>
+                  <div class="oneline-review">
+                    <img src="./images/today-book-icon.png" alt="">
+                    <h5>과도한 자기검열과 완벽주의에서의 탈피</h5>
+                  </div>
+                  <p class="review">매사에 완벽해야 한다는 강박에 시달리며 끊임없이 자신을 몰아세운 적이 
+                    있는가? 현대인의 정신·육체적 과로의 근원에는 언제나 집착에 가까운 
+                    완벽주의가 자리하고 있다. 당신을 가둔 완벽주의라는 감옥에서 탈출하고 
+                    싶다면, 이 책에서 그 길을 찾아보자.</p>
+                  <span class="price">15,400원</span>
+                </div>
+              </figcaption>
+              <div class="btn">자세히보기</div>
+            </article>
+            <iframe src="./today-books-list.html"></iframe>
+          </div>
+        </div>
+      </section>
+      <section class="trend-books">
+        <div class="inner">
+          <div class="head">
+            <h3>트랜드-북</h3>
+            <span>저번 주 화제의 책을 모아봤어요</span>
+            <a href="#">더보기 +</a>
+          </div>
+          <ul class="body">
+            <li>
+              <figure>
+                <img src="./images/book-sample-2.1.png" alt="">
+                <figcaption>
+                  <h4>트랜드 코리아 2025</h4>
+                  <p>
+                    경제 <br>
+                    김난도 · 미래의 창
+                  </p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="./images/book-sample-2.2.png" alt="">
+                <figcaption>
+                  <h4>2030 축의 전환</h4>
+                  <p>
+                    경제 <br>
+                    마우로 기옌 · 리더스북
+                  </p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="./images/book-sample-2.3.png" alt="">
+                <figcaption>
+                  <h4>달러구트 꿈 백화점</h4>
+                  <p>
+                    판타지 소설 <br>
+                    이미예 · 팩토리나인
+                  </p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="./images/book-sample-2.4.png" alt="">
+                <figcaption>
+                  <h4>불편한 편의점</h4>
+                  <p>
+                    현대 소설 <br>
+                    김호연 · 나무옆의자
+                  </p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="./images/book-sample-2.5.png" alt="">
+                <figcaption>
+                  <h4>미드나잇 라이브러리</h4>
+                  <p>
+                    판타지 소설 <br>
+                    매트 헤이그 · 인플루엔셜
+                  </p>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="ad-banner1">
+        <div class="inner">
+          <img src="./images/ad-banner-2.png" alt="">
+        </div>
+      </section>
+      <section class="new-books">
+        <div class="inner">
+          <div class="head">
+            <h3>신간 도착</h3>
+            <span>최근에 입고된 신간 도서를 모아봤어요</span>
+            <a href="#">더보기 +</a>
+          </div>
+          <ul class="body">
+            <li>
+              <figure>
+                <img src="./images/book-sample-3.1.png" alt="">
+                <figcaption>
+                  <h4>그녀를 지키다</h4>
+                  <p>
+                    소설 <br>
+                    장바티스트 앙드레아 · 열린책들
+                  </p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="./images/book-sample-3.2.png" alt="">
+                <figcaption>
+                  <h4>딱 1억만 모읍시다</h4>
+                  <p>
+                    경제/제테크 <br>
+                    김경필 · 경이로움
+                  </p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="./images/book-sample-3.3.png" alt="">
+                <figcaption>
+                  <h4>듀얼 브레인</h4>
+                  <p>
+                    자기계발<br>
+                    이선 몰릭 · 상상스퀘어
+                  </p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="./images/book-sample-3.4.png" alt="">
+                <figcaption>
+                  <h4>마흔에 읽는 쇼펜하우어</h4>
+                  <p>
+                    인문<br>
+                    강용수 · 유노북스
+                  </p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="./images/book-sample-3.5.png" alt="">
+                <figcaption>
+                  <h4>도둑맞은 집중력</h4>
+                  <p>
+                    심리학<br>
+                    요한 하리 · 어크로스
+                  </p>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="bestseller-and-recommand">
+        <div class="inner">
+          <div class="head">
+            <div class='head-top'>
+              <h3 class="btn nowtap">We의 베스트 선택</h3>
+              <h3 class="btn">Web의 추천</h3>
+              <a href="#">더보기 +</a>
+            </div>
+            <nav class="head-bot">
+              <ul>
+                <li class="select">전체</li>
+                <li>국내도서</li>
+                <li>외국도서</li>
+                <li>e-book</li>
+              </ul>
+            </nav>
+          </div>
+          <ul class="body">
+            <li>
+              <div class="article-head">
+                <div class="grade first">1</div>
+                <span class="grade-change red">2 ▲</span>
+              </div>
+              <figure class="article-body">
+                <img src="./images/book-sample-4.1.png" alt="">
+                <figcaption>
+                  <h4>채식주의자</h4>
+                  <p>소설<br>한강 · c창비</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <div class="article-head">
+                <div class="grade">2</div>
+                <span class="grade-change"></span>
+              </div>
+              <figure class="article-body">
+                <img src="./images/book-sample-4.2.png" alt="">
+                <figcaption>
+                  <h4>소년이 온다</h4>
+                  <p>소설 <br>한강 · 창비</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <div class="article-head">
+                <div class="grade">3</div>
+                <span class="grade-change red">new</span>
+              </div>
+              <figure class="article-body">
+                <img src="./images/book-sample-4.3.png" alt="">
+                <figcaption>
+                  <h4>작별하지 않는다</h4>
+                  <p>소설 <br>한강 · 문학동네</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <div class="article-head">
+                <div class="grade">4</div>
+                <span class="grade-change blue">2 ▼</span>
+              </div>
+              <figure class="article-body">
+                <img src="./images/book-sample-4.4.png" alt="">
+                <figcaption>
+                  <h4>흰</h4>
+                  <p>소설<br>한강 · 문학동네</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <div class="article-head">
+                <div class="grade">5</div>
+                <span class="grade-change"></span>
+              </div>
+              <figure class="article-body">
+                <img src="./images/book-sample-4.5.png" alt="">
+                <figcaption>
+                  <h4>서랍에 저녁을 넣어두었다.</h4>
+                  <p>시짐<br>한강 · 문학과지성사</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <div class="article-head">
+                <div class="grade">6</div>
+                <span class="grade-change red">1▲</span>
+              </div>
+              <figure class="article-body">
+                <img src="./images/book-sample-4.6.png" alt="">
+                <figcaption>
+                  <h4>불변의 법칙</h4>
+                  <p>경제/경영<br>모건 하우절 · 서삼독</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <div class="article-head">
+                <div class="grade">7</div>
+                <span class="grade-change blue">1▼</span>
+              </div>
+              <figure class="article-body">
+                <img src="./images/book-sample-4.7.png" alt="">
+                <figcaption>
+                  <h4>넥서스</h4>
+                  <p>인문<br>유발 하라리 · 감영사</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <div class="article-head">
+                <div class="grade">8</div>
+                <span class="grade-change red">new</span>
+              </div>
+              <figure class="article-body">
+                <img src="./images/book-sample-4.8.png" alt="">
+                <figcaption>
+                  <h4>마흔에 읽는 쇼펜하우어</h4>
+                  <p>인문<br>강용수 · 유노북스</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <div class="article-head">
+                <div class="grade">9</div>
+                <span class="grade-change blue">3▼</span>
+              </div>
+              <figure class="article-body">
+                <img src="./images/book-sample-4.9.png" alt="">
+                <figcaption>
+                  <h4>모순</h4>
+                  <p>소설<br>양귀자 · 쓰다</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <div class="article-head">
+                <div class="grade">10</div>
+                <span class="grade-change red">new</span>
+              </div>
+              <figure class="article-body">
+                <img src="./images/book-sample-4.0.png" alt="">
+                <figcaption>
+                  <h4>다시, 역사의 쓸모</h4>
+                  <p>역사/문화<br>최태성 · 프런트페이지</p>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="ad-banner2">
+        <div class="inner">
+          <img src="./images/ad-banner-3.png" alt="">
+        </div></section>
+      <section class="recommend-personal">
+        <div class="inner">
+          <div class="books-inner">
+            <div class="head">
+              <h3>나만의 위한 책</h3>
+              <span>당신에게 딱 맞을 책들을 선별했어요</span>
+              <a href="#">더보기 +</a>
+            </div>
+            <ul class="body">
+              <li>
+                <figure>
+                  <img src="./images/book-sample-5.1.png" alt="">
+                  <figcaption>
+                    <h4>모모</h4>
+                    <p>
+                      판타지, 철학 소설<br>
+                      미하엘 엔데 · 비룡소
+                    </p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="./images/book-sample-5.2.png" alt="">
+                  <figcaption>
+                    <h4>나는 매주 시체를 보러 간다</h4>
+                    <p>
+                      에세이<br>
+                      유성호 · 21세기북스
+                    </p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="./images/book-sample-5.3.png" alt="">
+                  <figcaption>
+                    <h4>기분을 관리하면 인생이.</h4>
+                    <p>
+                      심리학, 자기계발<br>
+                      스티븐 그로스 · 흐름출판
+                    </p>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+          <div class="test-inner">
+            <div class="test-head">
+              <img src="./images/test-img.png" alt="">
+            </div>
+            <div class="test-body">
+              <div class="btn">무료로 하러가기 ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="author">
+        <div class="inner">
+          <div class="book-live">
+            <div class="head">
+              <h3>책 수다방</h3>
+              <span>책의 진심인 사람들이 하는 책 이야기 라이브 방송</span>
+              <a href="#">더보기 +</a>
+            </div>
+            <ul class="body">
+              <li>
+                <figure>
+                  <iframe src="https://www.youtube.com/embed/bomrfO0YzJE?si=CysEj7ZgHWBvr50-" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video"></iframe>
+                  <figcaption>
+                    <h3>책 안 읽는 아아를 위한 습관</h3>
+                    <p>책이라면 뭐든 싫어하는 아이를 고치는 최고의 습관?</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <iframe src="https://www.youtube.com/embed/tfrnbLp6rVA?si=W0Rft-HmDeebcWCZ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video"></iframe>
+                  <figcaption>
+                    <h3>1일 1독서, 삶이 바뀝니다.</h3>
+                    <p>책을 하루에 한권 읽으면서 생긴 변화를 느껴보세요</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <iframe src="https://www.youtube.com/embed/RyeLupM53DM?si=jFoiNrsXPTcfBwre" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video"></iframe>
+                  <figcaption>
+                    <h3>책은 왜 읽어야할까?</h3>
+                    <p>책 읽는 유명인이 말하는 진정한 '책 읽을 이유'</p>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+          <div class="author-life">
+            <div class="head">
+              <h3>작가의 일상</h3>
+              <span>작가의 메세지를 공유해드려요</span>
+              <a href="#">더보기 +</a>
+            </div>
+            <div class="body">
+              <ul>
+                <li>
+                  <article>
+                    <img src="./images/author1.png" alt="">
+                    <div class="text-area">
+                      <h5>오늘도, 나를 다독입니다.</h5>
+                      <p>조금 느려도 괜찮아요. <br> 멈추지 않는다면, 그건 분명히 나아가는 중이니까요,</p>
+                      <span class="author-name">류시훈</span>
+                      <div class="symbol-list">
+                        <span class="material-symbols-outlined">
+                          thumb_up
+                        </span>
+                        <span class="material-symbols-outlined">
+                          favorite
+                        </span>
+                        <span class="material-symbols-outlined">
+                          share
+                        </span>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li>
+                  <article>
+                    <img src="./images/author2.png" alt="">
+                    <div class="text-area">
+                      <h5>좋은 글이란</h5>
+                      <p>오늘도 책상 앞에 앉아 조용히 생각했다. 좋은 글은 결국, 내가 아닌 누군가의 마음을 먼저 안아주는 글이어야 한다는 것을. 🍃 #글쓰기 #작가일상</p>
+                      <span class="author-name">정민우</span>
+                      <div class="symbol-list">
+                        <span class="material-symbols-outlined">
+                          thumb_up
+                        </span>
+                        <span class="material-symbols-outlined">
+                          favorite
+                        </span>
+                        <span class="material-symbols-outlined">
+                          share
+                        </span>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li>
+                  <article>
+                    <img src="./images/author3.png" alt="">
+                    <div class="text-area">
+                      <h5>작은 것들이 만든 하루</h5>
+                      <p>햇살 한 줌, 웃음 한 번, 고양이의 하품. <br>행복은 그렇게, 작게 온다.</p>
+                      <span class="author-name">윤서연</span>
+                      <div class="symbol-list">
+                        <span class="material-symbols-outlined">
+                          thumb_up
+                        </span>
+                        <span class="material-symbols-outlined">
+                          favorite
+                        </span>
+                        <span class="material-symbols-outlined">
+                          share
+                        </span>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+              <div class="prep-btn"><</div>
+              <div class="next-btn">></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <footer id="footer">
+      <section class="sub-manu">
+        <div class="inner">
+          <div class="notice">
+            <h5>공지사항</h5>
+            <h6>3월 30일 배송오류 배상 안내</h6>
+            <a href="#">더보기 +</a>
+          </div>
+          <div class="sns">
+            <ul>
+              <li>
+                <img src="./images/sns1.png" alt="">
+                <p>
+                  Webook <br>
+                  공식 페이스북 바로가기</p>
+              </li>
+              <li>
+                <img src="./images/sns2.png" alt="">
+                <p>
+                  Webook <br>
+                  공식 인스타그램 바로가기</p>
+              </li>
+              <li>
+                <img src="./images/sns3.png" alt="">
+                <p>
+                  Webook <br>
+                  공식 유튜브 바로가기
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="info">
+        <div class="inner">
+          <h2><img src="./images/logo.png" alt=""></h2>
+          <ul class="company-nav">
+            <li>회사소개</li>
+            <li>인재채용</li>
+            <li>이용약관</li>
+            <li>개인정보처리방침</li>
+            <li>청소년보호정책</li>
+            <li>도서홍보안내</li>
+            <li>광고안내</li>
+            <li>제휴안내</li>
+            <li>복지제휴</li>
+            <li>매장안내</li>
+          </ul>
+          <p class="copyright">
+            <span>(주)위북</span> 대표이사 장근용 <br>
+            사업자등록번호 : 277-8335 통신판매업신고 : 2025-서울중구-0067 <br>
+            주소 : 서울 강남구 낙천대로 423 88 5(신림동 유아빌딩) <br>
+            이메일 : webook@webook.co.kr 호스팅 : (주)webookHost <br>
+            Copyright ⓒ WEBOOK Corp. All Rights Reserved.
+          </p>
+          <div class="customer-service">
+            <span>고객센터 전화번호</span>
+            <h4>051-777-3885</h4>
+            <p>
+              상담가능시간 <br>
+              평일 09:00 ~ 18:00 토요일 10:00 ~ 15:00 / 점심시간 12:00 ~ 13:00 <br>
+              일요일 및 공휴일 휴무
+            </p>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </div>
+</body>
+</html>
