@@ -171,6 +171,8 @@
   justify-content: space-around;
   align-items: center;
   background-color: #32CD32;
+  cursor: pointer;
+  user-select: none;
 }
 
 #header .search > .btn > span{
@@ -197,6 +199,8 @@
   align-items: center;
   font-weight: 600;
   margin-right: 15px;
+  cursor: pointer;
+  user-select: none;
 }
 
 #header .main-nav .first-li{

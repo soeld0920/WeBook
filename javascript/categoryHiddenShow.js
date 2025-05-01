@@ -1,4 +1,4 @@
-import "./showModule.js"
+import {categoryIsShown, categoryShow, categoryClose, categoryDiv} from "./showModule.js"
 
 window.addEventListener('load',() => {
   const showBtn = document.querySelector('#header .category .btn')
@@ -6,7 +6,7 @@ window.addEventListener('load',() => {
   let notEnter = null
 
   showBtn.addEventListener('click',() => {
-    if(categoryIsShown()){
+    if(!categoryIsShown()){
       categoryShow()
       notEnter = setTimeout(categoryClose,7500)
     }else{

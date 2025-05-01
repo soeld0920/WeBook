@@ -1,6 +1,6 @@
 window.addEventListener('load',() => {
   const text = document.querySelector('#header .search span')
-  const hiddenDiv = document.querySelector('#header .category-hidden-div')
+  const hiddenDiv = document.querySelector('.category-hidden-div')
   const hiddenli = hiddenDiv.children[0].children
 
   for(let i = 0; i < hiddenli.length; i++){

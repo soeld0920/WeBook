@@ -1,45 +1,26 @@
+import { resentClose, resentDiv, resentIsShown, resentShow, searchBox, snipperIsShown } from "./showModule.js"
+
 window.addEventListener('load', () => {
-  const searchBox = document.querySelector('#header .text-input')
-  const hiddenDiv = document.querySelector('#header .category-hidden-div')
-  const resentDiv = document.querySelector('#header .resent-hidden-div')
-  const cancelBtn = document.querySelector('#header .resent-hidden-div .footer-hidden a')
-  let isShow = false
-
-  const showResent = () => {
-    let islock = hiddenDiv.classList.contains('none')
-    if(!isShow && !islock){
-      resentDiv.classList.add('show')
-      isShow = true
-      hiddenDiv.classList.add('none')
-    }
-  }
-
-  const closeResent = () => {
-    if(isShow){
-      resentDiv.classList.remove('show')
-      isShow = false
-      hiddenDiv.classList.remove('none')
-      hiddenDiv.classList.remove('show')
-    }
-  }
+  const cancelBtn = document.querySelector('.resent-hidden-div .footer-hidden a')
 
   searchBox.addEventListener('click',() => {
-    showResent()
+    console.log('a')
+    resentShow()
   })
 
   cancelBtn.addEventListener('click',() => {
-    closeResent()
+    resentClose()
   })
 
   document.addEventListener('click',(e) => {
-    if(!(searchBox.contains(e.target) || resentDiv.contains(e.target))){
-      closeResent()
+    if(resentIsShown() && !(searchBox.contains(e.target) || resentDiv.contains(e.target))){
+      resentClose()
     }
   })
 
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
-      closeResent();
+      resentClose();
     }
   });
 })

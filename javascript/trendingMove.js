@@ -25,7 +25,6 @@ window.addEventListener('load',() => {
       clearInterval(autoMove)
       isStop = true
     }
-    console.log('a')
   })
 
   trendUl.addEventListener('mouseout',() => {
@@ -33,7 +32,6 @@ window.addEventListener('load',() => {
       autoMove = setInterval(moveUp,2500);
       isStop = false
     }
-    console.log('b')
   })
 
 })

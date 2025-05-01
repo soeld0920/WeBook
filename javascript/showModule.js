@@ -1,6 +1,7 @@
-export const categoryDiv = document.querySelector('#header .category-hidden-div')
-export const resentDiv = document.querySelector('#header .resent-hidden-div')
-export const snipperDiv = document.querySelector('#header .snipper-hidden-div')
+export const searchBox = document.querySelector('#header .text-input')
+export const categoryDiv = document.querySelector('.category-hidden-div')
+export const resentDiv = document.querySelector('.resent-hidden-div')
+export const snipperDiv = document.querySelector('.snipper-hidden-div')
 
 class Hidden{
   constructor(div){
@@ -12,6 +13,7 @@ class Hidden{
     const isLock = this.div.classList.contains('lock')
     if(!isShow && !isLock){
       this.div.classList.add('show')
+      this.isshow = true
     }
   }
   
@@ -19,6 +21,7 @@ class Hidden{
     const isShow = this.div.classList.contains('show')
     if(isShow){
       this.div.classList.remove('show')
+      this.isshow = false
     }
   }
   
@@ -26,6 +29,7 @@ class Hidden{
     const isLock = this.div.classList.contains('lock')
     if(!isLock){
       this.div.classList.add('lock')
+      this.islock = true
     }
   }
   
@@ -33,6 +37,7 @@ class Hidden{
     const isLock = this.div.classList.contains('lock')
     if(isLock){
       this.div.classList.remove('lock')
+      this.islock = false
     }
   }
 
@@ -43,7 +48,11 @@ const resent = new Hidden(resentDiv)
 const snipper = new Hidden(snipperDiv)
 
 export function categoryShow(){
-  category.show()
+  if(!category.islock){
+    category.show()
+    resent.close()
+    snipper.close()
+  }
 }
 
 export function categoryClose(){
@@ -51,37 +60,49 @@ export function categoryClose(){
 }
 
 export function categoryIsShown(){
-  return category.classList.contains('show')
+  return categoryDiv.classList.contains('show')
 }
 
 export function resentShow(){
-  resent.show()
-  category.lock()
-  snipper.lock()
+  if(!resent.islock){
+    resent.show()
+    category.lock()
+    snipper.lock()
+    category.close()
+    snipper.close()
+  } 
 }
 
 export function resentClose(){
-  resent.close()
-  category.unlock()
-  snipper.unlock()
+  if(resent.isshow){
+    resent.close()
+    category.unlock()
+    snipper.unlock()
+  }
 }
 
 export function resentIsShown(){
-  return resent.classList.contains('show')
+  return resentDiv.classList.contains('show')
 }
 
 export function snipperShow(){
-  snipper.show()
-  category.lock()
-  resent.lock()
+  if(!snipper.islock){
+    snipper.show()
+    category.lock()
+    resent.lock()
+    category.close()
+    resent.close()
+  }
 }
 
 export function snipperClose(){
-  snipper.close()
-  category.unlock()
-  resent.unlock()
+  if(snipper.isshow){
+    snipper.close()
+    category.unlock()
+    resent.unlock()
+  }
 }
 
 export function snipperIsShown(){
-  return snipper.classList.contains('show')
+  return snipperDiv.classList.contains('show')
 }

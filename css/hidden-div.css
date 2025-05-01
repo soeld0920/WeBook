@@ -1,6 +1,22 @@
 .hidden{
   position: absolute;
   top: 0px;
+  width: 100%;
+  height: 580px;
+  pointer-events: none;
+}
+
+.hidden .inner{
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 580px;
+  margin: 0 auto;
+}
+
+.hidden .inner > *{
+  pointer-events: auto;
+  z-index: 200;
 }
 
 .trending-hidden-div{
@@ -392,23 +408,27 @@
   position: absolute;
   width: 100%;
   max-width: 1200px;
-  height: 420px;
+  max-height: 420px;
   top: 160px;
   left: 0px;
   z-index: 100;
-  display: flex;
   display: none;
 }
 
 .field-hidden-div .head{
   width: 110px;
-  height: 420px;
-  border:3px solid rgba(139,69,19,0.75);
+  max-height: 0px;
+  border:none;
   background-color: #EEEEEE;
   box-sizing: border-box;
   display: flex;
   align-items: center;
-  display: none;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.field-hidden-div .head.show{
+  max-height: 420px;
 }
 
 .field-hidden-div .head li{
@@ -428,14 +448,17 @@
 }
 
 .field-hidden-div .body{
-  width: 1090px;
+  width: 0px;
   height: 420px;
-  border-right:3px solid rgba(139,69,19,0.75);
-  border-bottom:3px solid rgba(139,69,19,0.75);
   background-color: #EEEEEE;
   box-sizing: border-box;
   position: relative;
-  display: none;
+  transition: all 0.8s;
+  overflow: hidden;
+}
+
+.field-hidden-div .body.show{
+  width: 1090px;
 }
 
 .field-hidden-div .body a{
@@ -478,4 +501,22 @@
   margin-bottom: 5px;
   font-size: 13px;
   color: #666666cc;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+.buffer-head{
+  width: 110px;
+  height: 3px;
+  position: absolute;
+  top: 157px;
+  left: 0px;
+}
+
+.buffer-body{
+  width: 3px;
+  height: 420px;
+  position: absolute;
+  top: 160px;
+  left: 107px;
 }
