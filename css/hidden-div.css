@@ -66,6 +66,8 @@
   text-decoration: underline;
 }
 
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
 .resent-hidden-div{
   position: absolute;
   width: 550px;
@@ -76,8 +78,15 @@
   border: 2px solid #32cd32;
   border-radius: 10px;
   background-color: #fff;
-  display: flex;
   flex-wrap: wrap;
+  display: none;
+}
+
+.resent-hidden-div.show{
+  display: flex;
+}
+
+.resent-hidden-div.lock{
   display: none;
 }
 
@@ -195,6 +204,8 @@
   margin-right: 10px;
 }
 
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
 .snipper-hidden-div{
   position: absolute;
   width: 550px;
@@ -205,8 +216,15 @@
   border: 2px solid #32cd32;
   border-radius: 10px;
   background-color: #fff;
-  display: flex;
   flex-wrap: wrap;
+  display: none;
+}
+
+.snipper-hidden-div.show{
+  display: flex;
+}
+
+.snipper-hidden-div.lock{
   display: none;
 }
 
@@ -318,6 +336,8 @@
   margin-right: 10px;
 }
 
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
 .category-hidden-div{
   position: absolute;
   width: 115px;
@@ -340,7 +360,7 @@
   border: 2px solid #32cd32;
 }
 
-.category-hidden-div.none{
+.category-hidden-div.lock{
   max-height: 0px;
   display: none;
 }
@@ -365,6 +385,8 @@
 .category-hidden-div li:hover{
   text-decoration: underline;
 }
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
 .field-hidden-div{
   position: absolute;

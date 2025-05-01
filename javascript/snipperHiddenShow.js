@@ -2,44 +2,47 @@ window.addEventListener('load', () => {
   const searchBox = document.querySelector('#header .text-input')
   const hiddenDiv = document.querySelector('#header .category-hidden-div')
   const resentDiv = document.querySelector('#header .resent-hidden-div')
-  const cancelBtn = document.querySelector('#header .resent-hidden-div .footer-hidden a')
+  const snipperDiv = document.querySelector('#header .snipper-hidden-div')
+  const cancelBtn = document.querySelector('#header .snipper-hidden-div .footer-hidden a')
   let isShow = false
 
-  const showResent = () => {
-    let islock = hiddenDiv.classList.contains('none')
-    if(!isShow && !islock){
-      resentDiv.classList.add('show')
+  const showSnipper = () => {
+    if(!isShow){
+      snipperDiv.classList.add('show')
       isShow = true
       hiddenDiv.classList.add('none')
+      resentDiv.classList.add('none')
     }
   }
 
-  const closeResent = () => {
+  const closeSnipper = () => {
     if(isShow){
-      resentDiv.classList.remove('show')
+      snipperDiv.classList.remove('show')
       isShow = false
       hiddenDiv.classList.remove('none')
       hiddenDiv.classList.remove('show')
+      resentDiv.classList.remove('none')
+      resentDiv.classList.remove('show')
     }
   }
 
-  searchBox.addEventListener('click',() => {
-    showResent()
+  searchBox.addEventListener('input',(e) => {
+    showSnipper()
   })
 
   cancelBtn.addEventListener('click',() => {
-    closeResent()
+    closeSnipper()
   })
 
   document.addEventListener('click',(e) => {
     if(!(searchBox.contains(e.target) || resentDiv.contains(e.target))){
-      closeResent()
+      closeSnipper()
     }
   })
 
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
-      closeResent();
+      closeSnipper();
     }
   });
 })
