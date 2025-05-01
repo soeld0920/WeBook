@@ -1,0 +1,211 @@
+@media screen and (max-width:1200px) {
+  #wrap{
+    height: auto;
+  }
+  #header{
+    height: auto;
+  }
+  #header .header-mid{
+    height: 60px;
+  }
+  
+  #header .inner .logo{
+    width: 240px;
+  }
+
+  #header .inner .search{
+    width: 450px;
+    height: 40px;
+  }
+
+  #header .search .category{
+    width: 100px;
+  }
+
+  #header .search .category span{
+    font-size: 14px;
+  }
+
+  #header .inner .text-input{
+    height: 38px;
+  }
+
+  #header .inner .ad-banner{
+    width: 200px;
+  }
+
+  #header .inner .ad-banner img{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width : 1200px) {
+  #main-img .prep-btn{
+    left: 50px;
+  }
+
+  #main-img .next-btn{
+    right: 50px;
+  }
+}
+
+@media screen and (max-width : 1200px) {
+  #contents{
+    height: auto;
+  }
+  #contents .today-books{
+    height: 260px;
+  }
+  
+  #contents .today-books .body{
+    height: 200px;
+    gap: 0 5vw;
+  }
+
+  #contents .book-info figure{
+    width: 14vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  #contents .book-info figcaption{
+    width: 30vw;
+  }
+  
+  #contents .today-books .body .book-info{
+    width: 50vw;
+    gap: 20px;
+  }
+
+  #contents .today-books .figcation-inner .title{
+    font-size: 18px;
+  }
+
+  #contents .today-books .figcation-inner h5{
+    font-size: 14px;
+  }
+
+  #contents .today-books .body iframe{
+    margin-left: auto;
+    width: 45vw;
+    height: 100%;
+  }
+
+  /*  */
+
+  #contents .trend-books{
+    height: 360px;
+  }
+
+  #contents .trend-books .body{
+    height: 300px;
+  }
+
+  #contents .trend-books figure{
+    width: 15vw;
+  }
+
+  #contents .trend-books figure img{
+    display: inline-block;
+    width: 100%;
+  }
+
+  /*  */
+
+  #contents .new-books{
+    height: 360px;
+  }
+
+  #contents .new-books .body{
+    height: 300px;
+  }
+
+  #contents .new-books figure{
+    width: 15vw;
+  }
+
+  #contents .new-books figure img{
+    display: inline-block;
+    width: 100%;
+  }
+
+  /*  */
+
+  #contents .bestseller-and-recommand .body li:nth-child(9){
+    display: none;
+  }
+
+  #contents .bestseller-and-recommand .body li:nth-child(10){
+    display: none;
+  }
+
+  /*  */
+
+  #contents .author .book-live{
+    width: 50vw;
+  }
+
+  #contents .author .author-life{
+    width: 45vw;
+  }
+
+  #contents .author .book-live .body li{
+    width: 15vw;
+    height: 150px;
+  }
+
+  #contents .author .book-live .body iframe{
+    height: 100px;
+  }
+
+  #contents .author .book-live .body h3{
+    font-size: 13px;
+  }
+
+  #contents .author .book-live .body p{
+    font-size: 12px;
+  }
+
+  #contents .author-life .body ul{
+    position: absolute;
+    left: -185%; 
+  }
+  /* 2.5%, -88%,  -185%*/
+
+}
+
+@media screen and (max-width : 1200px) {
+  #footer{
+    height: auto;
+  }
+  #footer .info .inner{
+    height: 170px;
+    margin-top: 10px;
+    grid-template-rows: 50px 110px;
+    grid-template-columns: 33vw 65vw;
+    gap: 10px 2vw;
+  }
+  
+  #footer .info .company-nav li:nth-child(7)::after{
+    content: none;
+  }
+  #footer .info .company-nav li:nth-child(8){
+    display: none;
+  }
+  #footer .info .company-nav li:nth-child(9){
+    display: none;
+  }
+  #footer .info .company-nav li:nth-child(10){
+    display: none;
+  }
+  
+}
+
+@media screen and (max-width : 1200px) {
+  .field-hidden-div{
+    top: 130px;
+  }
+}
+
+

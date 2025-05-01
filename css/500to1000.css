@@ -1,0 +1,269 @@
+@media screen and (max-width:1000px) {
+  #header{
+    height: auto;
+  }
+  #header .header-mid{
+    height: 60px;
+  }
+  
+  #header .inner .logo{
+    width: 120px;
+  }
+
+  #header .inner .search{
+    width: 300px;
+    height: 40px;
+  }
+
+  #header .search .category{
+    width: 100px;
+  }
+
+  #header .search .category span{
+    font-size: 12px;
+  }
+
+  #header .inner .text-input{
+    height: 38px;
+  }
+
+  #header .inner .ad-banner{
+    width: 200px;
+  }
+
+  #header .inner .ad-banner img{
+    width: 100%;
+  }
+
+  /*  */
+
+  #header .header-bot .main-nav{
+    font-size: 14px;
+  }
+
+  #header .main-nav > li{
+    margin-right: 10px;
+  }
+
+  #header .main-nav .first-li{
+    width: 60px;
+  }
+
+}
+
+@media screen and (max-width:1000px) {
+  #main-img .prep-btn{
+    display: none;
+  }
+
+  #main-img .next-btn{
+    display: none;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  #contents .today-books{
+    height: auto;
+  }
+  #contents .today-books .body{
+    height: 150px;
+  }
+  #contents .today-books .figcation-inner .review{
+    display: none;
+  }
+  
+  /*  */
+
+  #contents .bestseller-and-recommand .body li:nth-child(7){
+    display: none;
+  }
+
+  #contents .bestseller-and-recommand .body li:nth-child(8){
+    display: none;
+  }
+
+  /*  */
+
+  #contents .recommend-personal{
+    height: auto;
+  }
+
+  #contents .recommend-personal .inner{
+    height: 360px;
+  }
+
+  #contents .recommend-personal .books-inner{
+    width: 66vw;
+  }
+
+  #contents .recommend-personal .books-inner .head h3{
+    font-size: 20px;
+  }
+
+  #contents .recommend-personal .books-inner .head span{
+    font-size: 13px;
+  }
+
+  #contents .recommend-personal .books-inner .body{
+    height: 270px
+  }
+
+  #contents .recommend-personal figure{
+    width: 17vw;
+  }
+
+  #contents .recommend-personal figure img{
+    display: inline-block;
+    width: 100%;
+  }
+
+  #contents .recommend-personal figure h4{
+    height: 18px;
+    overflow: hidden;
+  }
+
+  #contents .recommend-personal figure p{
+    height: 31px;
+    overflow: hidden;
+  }
+
+  #contents .recommend-personal .test-inner{
+    margin-left: 9vw;
+    margin-top: 30px;
+    width: 25vw;
+    height: 300px;
+  }
+
+  #contents .recommend-personal .test-head{
+    height: 75%;
+  }
+
+  #contents .recommend-personal .test-body{
+    height: 25%;
+  }
+
+  #contents .test-inner .test-body .btn{
+    width: 75%;
+  }
+
+  /*  */
+  #contents .author {
+    height: 200px;
+  }
+
+  #contents .author .book-live .head h3{
+    font-size: 20px;
+  }
+
+  #contents .author .book-live .head span{
+    display: none;
+  }
+
+  #contents .author .author-life .head span{
+    display: none;
+  }
+
+  #contents .author .book-live{
+    height: 200px;
+  }
+
+  #contents .author .author-life{
+    height: 200px;
+  }
+
+  #contents .author .book-live .body{
+    margin-top: 10px;
+    height: 150px;
+  }
+
+  #contents .author .book-live .body li{
+    width: 15vw;
+    height: 100%;
+  }
+
+  #contents .author .book-live .body iframe{
+    height: 70px;
+  }
+
+  #contents .author .book-live .body h3{
+    font-size: 13px;
+    height: 26px;
+  }
+
+  #contents .author .book-live .body p{
+    font-size: 12px;
+    height: 36px;
+  }
+
+  #contents .author .author-life .body{
+    margin-top: 20px;
+    height: 140px;
+  }
+
+  #contents .author-life .body ul{
+    width: 1000px;
+    left: -97.5%; 
+    /* 5%  -97.5% -200%*/
+    height: 80px;
+  }
+
+  #contents .author-life .text-area p{
+    margin-top: 2px;
+    width: 200px;
+    font-size: 13px;
+  }
+
+  #contents .author-life .body article{
+    width: 300px;
+  }
+
+  #contents .author-life .text-area .author-name{
+    display: none;
+  }
+
+  #contents .author-life .text-area .symbol-list{
+    display: none;
+  }
+}
+
+
+@media screen and (max-width:1000px) {
+  #footer .sub-manu .notice{
+    width: 80vw;
+  }
+  #footer .sub-manu .notice h6{
+    margin-left: 5vw;
+  }
+  #footer .sub-manu .sns{
+    width: 20vw;
+  }
+  #footer .sub-manu .sns ul{
+    width: 120px;
+  }
+
+  #footer .sub-manu .sns li{
+    width: 32px;
+  }
+
+  #footer .sns p{
+    display: none;
+  }
+
+  /*  */
+
+
+  #footer .info .inner{
+    grid-template-columns: 48vw 50vw;
+  }
+
+  #footer .info .company-nav li:nth-child(5){
+    display: none;
+  }
+  #footer .info .company-nav li:nth-child(6){
+    display: none;
+  }
+}
+
+
+@media screen and (max-width:1000px) {
+}

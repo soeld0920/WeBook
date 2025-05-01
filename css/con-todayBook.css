@@ -16,12 +16,12 @@
   gap: 30px;
 }
 
-#contents .book-info .figure{
+#contents .book-info figure{
   width: 210px;
   height: 300px;
 }
 
-#contents .book-info .figure img{
+#contents .book-info figure img{
   width: 100%;
 }
 

@@ -15,56 +15,65 @@
   <link rel="stylesheet" href="./css/con-todayBook.css">
   <link rel="stylesheet" href="./css/footer.css">
   <link rel="stylesheet" href="./css/hidden-div.css">
+  <script src="./javascript/mainImgMove.js"></script>
+  <script src="./javascript/trendingMove.js"></script>
+  <script src="./javascript/trendingHiddenShow.js"></script>
+  <script src="./javascript/categorySelect.js"></script>
+  <script src="./javascript/categoryHiddenShow.js"></script>
+  <script src="./javascript/resentHiddenShow.js"></script>
 </head>
 <body>
   <div id="wrap">
     <header id="header">
       <nav class="header-top">
         <div class="inner">
-          <div class="trending-div">
-            <ul class="trending">
-              <li>
-                <div class="grade-box">1</div>
-                <span>파친코</span>
-              </li>
-              <li>
-                <div class="grade-box">2</div>
-                <span>달러구트 꿈 백화점</span>
-              </li>
-              <li>
-                <div class="grade-box">3</div>
-                <span>지구 끝의 온실</span>
-              </li>
-              <li>
-                <div class="grade-box">4</div>
-                <span>아몬드</span>
-              </li>
-              <li>
-                <div class="grade-box">5</div>
-                <span>불편한 편의점</span>
-              </li>
-              <li>
-                <div class="grade-box">6</div>
-                <span>소크라테스 익스프레스</span>
-              </li>
-              <li>
-                <div class="grade-box">7</div>
-                <span>미드나잇 라이브러리</span>
-              </li>
-              <li>
-                <div class="grade-box">8</div>
-                <span>부의 대이동</span>
-              </li>
-              <li>
-                <div class="grade-box">9</div>
-                <span>인생은 실전이다</span>
-              </li>
-              <li>
-                <div class="grade-box">10</div>
-                <span>트랜드 코리아 2025</span>
-              </li>
-            </ul>
-          </div>
+          <ul class="trending">
+            <li>
+              <div class="grade-box">1</div>
+              <a href="#">파친코</a>
+            </li>
+            <li>
+              <div class="grade-box">2</div>
+              <a href="#">달러구트 꿈 백화점</a>
+            </li>
+            <li>
+              <div class="grade-box">3</div>
+              <a href="#">지구 끝의 온실</a>
+            </li>
+            <li>
+              <div class="grade-box">4</div>
+              <a href="#">아몬드</a>
+            </li>
+            <li>
+              <div class="grade-box">5</div>
+              <a href="#">불편한 편의점</a>
+            </li>
+            <li>
+              <div class="grade-box">6</div>
+              <a href="#">소크라테스 익스프레스</a>
+            </li>
+            <li>
+              <div class="grade-box">7</div>
+              <a href="#">미드나잇 라이브러리</a>
+            </li>
+            <li>
+              <div class="grade-box">8</div>
+              <a href="#">부의 대이동</a>
+            </li>
+            <li>
+              <div class="grade-box">9</div>
+              <a href="#">인생은 실전이다</a>
+            </li>
+            <li>
+              <div class="grade-box">10</div>
+              <a href="#">트랜드 코리아 2025</a>
+            </li>
+            <li>
+              <div class="grade-box">1</div>
+              <a href="#">파친코</a>
+            </li>
+          </ul>
+          <div class="show-btn">▼</div>
           <ul class="login-nav">
             <li><a href="#">로그인</a></li>
             <li><a href="#">회원가입</a></li>
@@ -77,12 +86,12 @@
       <div class="header-mid">
         <div class="inner">
           <div class="logo">
-            <h1><a href="#"><img src="./images/logo.png" alt="logo이미지"></a></h1>
+            <h1><a href="./index.html"><img src="./images/logo.png" alt="logo이미지" draggable="false"></a></h1>
           </div>
           <div class="search">
             <div class="category">
               <span>통합검색</span>
-              <span class="btn">></span>
+              <div class="btn">▼</div>
             </div>
             <input type="text" placeholder="검색어를 입력하세요" class="text-input">
             <div class="btn">
@@ -92,21 +101,20 @@
             </div>
           </div>
           <div class="ad-banner">
-            <h3><img src="./images/ad-banner-1.png" alt=""></h3>
+            <h3><img src="./images/ad-banner-1.png" alt="" draggable="false"></h3>
           </div>
         </div>
       </div>
       <nav class="header-bot">
         <div class="inner">
           <ul class="main-nav">
-            <li class="first-li">분야보기</li>
-            <li class="main-li">베스트작품</li>
-            <li class="main-li">신상품</li>
-            <li class="main-li">이벤트</li>
-            <li class="main-li">만남의공간</li>
-            <li class="sub-li">개인맞춤독서</li>
-            <li class="sub-li">이달의특가</li>
-            <li class="sub-li">바로펀딩</li>
+            <li class="first-li"><a>베스트작품</a></li>
+            <li class="main-li"><a>신상품</a></li>
+            <li class="main-li"><a>이벤트</a></li>
+            <li class="main-li"><a>만남의공간</a></li>
+            <li class="sub-li"><a>개인맞춤독서</a></li>
+            <li class="sub-li"><a>이달의특가</a></li>
+            <li class="sub-li"><a>바로펀딩</a></li>
           </ul>
           <div class="ad-text">
             <span>신학기 기념 20~80%의 특가!</span>
@@ -120,43 +128,43 @@
             <ul class="trending-hidden">
               <li>
                 <div class="grade-box">1</div>
-                <span>파친코</span>
+                <a href="#">파친코</a>
               </li>
               <li>
                 <div class="grade-box">2</div>
-                <span>달러구트 꿈 백화점</span>
+                <a href="#">달러구트 꿈 백화점</a>
               </li>
               <li>
                 <div class="grade-box">3</div>
-                <span>지구 끝의 온실</span>
+                <a href="#">지구 끝의 온실</a>
               </li>
               <li>
                 <div class="grade-box">4</div>
-                <span>아몬드</span>
+                <a href="#">아몬드</a>
               </li>
               <li>
                 <div class="grade-box">5</div>
-                <span>불편한 편의점</span>
+                <a href="#">불편한 편의점</a>
               </li>
               <li>
                 <div class="grade-box">6</div>
-                <span>소크라테스 익스프레스</span>
+                <a href="#">소크라테스 익스프레스</a>
               </li>
               <li>
                 <div class="grade-box">7</div>
-                <span>미드나잇 라이브러리</span>
+                <a href="#">미드나잇 라이브러리</a>
               </li>
               <li>
                 <div class="grade-box">8</div>
-                <span>부의 대이동</span>
+                <a href="#">부의 대이동</a>
               </li>
               <li>
                 <div class="grade-box">9</div>
-                <span>인생은 실전이다</span>
+                <a href="#">인생은 실전이다</a>
               </li>
               <li>
                 <div class="grade-box">10</div>
-                <span>트랜드 코리아 2025</span>
+                <a href="#">트랜드 코리아 2025</a>
               </li>
             </ul>
           </div>
@@ -167,7 +175,7 @@
                 <li>수능특강<a href="#">×</a></li>
                 <li>미키14<a href="#">×</a></li>
                 <li>성경<a href="#">×</a></li>
-                <li>초보자도 하는 5분요리 : 볶.<a href="#">×</a></li>
+                <li>초보자도 하는 5분요리 : 볶...<a href="#">×</a></li>
                 <li>How to happy?<a href="#">×</a></li>
                 <li>대학수학<a href="#">×</a></li>
                 <li>마더텅 국어 비문학<a href="#">×</a></li>
@@ -287,7 +295,7 @@
           </div>
           <div class="category-hidden-div">
             <ul>
-              <li>통합검색</li>
+              <li class="select">통합검색</li>
               <li>국내도서</li>
               <li>외국도서</li>
               <li>e-book</li>
@@ -392,27 +400,40 @@
     <section id="main-img">
       <ul class="img-list">
         <li>
-          <div class="inner"><img src="./images/main-img1.png" alt=""></div>
+          <div class="inner"><img src="./images/main-img6.png" alt="" draggable="false"></div>
         </li>
         <li>
-          <div class="inner"><img src="./images/main-img2.png" alt=""></div>
+          <div class="inner"><img src="./images/main-img1.png" alt="" draggable="false"></div>
         </li>
         <li>
-          <div class="inner"><img src="./images/main-img3.png" alt=""></div>
+          <div class="inner"><img src="./images/main-img2.png" alt="" draggable="false"></div>
         </li>
         <li>
-          <div class="inner"><img src="./images/main-img4.png" alt=""></div>
+          <div class="inner"><img src="./images/main-img3.png" alt="" draggable="false"></div>
         </li>
         <li>
-          <div class="inner"><img src="./images/main-img5.png" alt=""></div>
+          <div class="inner"><img src="./images/main-img4.png" alt="" draggable="false"></div>
         </li>
         <li>
-          <div class="inner"><img src="./images/main-img6.png" alt=""></div>
+          <div class="inner"><img src="./images/main-img5.png" alt="" draggable="false"></div>
+        </li>
+        <li>
+          <div class="inner"><img src="./images/main-img6.png" alt="" draggable="false"></div>
+        </li>
+        <li>
+          <div class="inner"><img src="./images/main-img1.png" alt="" draggable="false"></div>
         </li>
       </ul>
       <div class="prep-btn"><</div>
       <div class="counter">
-        <span class="dot-indicator"><span class="dot-now">●</span>●●●●●</span> <br>
+        <div class="dot-indicator">
+          <span class="dot-now">●</span>
+          <span>●</span>
+          <span>●</span>
+          <span>●</span>
+          <span>●</span>
+          <span>●</span>
+        </div> 
         <span class="slide-number">1/6</span>
       </div>
       <div class="next-btn">></div>
@@ -432,7 +453,7 @@
               </figure>
               <figcaption>
                 <div class="figcation-inner">
-                  <h4 class="title">완벽이라는 중독 : 불안한 완벽.</h4>
+                  <h4 class="title">완벽이라는 중독 : 불안한 완벽...</h4>
                   <span class="author">토미스 커런</span>
                   <div class="oneline-review">
                     <img src="./images/today-book-icon.png" alt="">
@@ -790,7 +811,7 @@
                 <figure>
                   <img src="./images/book-sample-5.3.png" alt="">
                   <figcaption>
-                    <h4>기분을 관리하면 인생이.</h4>
+                    <h4>기분을 관리하면 인생이...</h4>
                     <p>
                       심리학, 자기계발<br>
                       스티븐 그로스 · 흐름출판

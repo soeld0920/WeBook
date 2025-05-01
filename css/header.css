@@ -25,15 +25,17 @@
 }
 
 #header .header-top > .inner{
+  height: 30px;
   justify-content: space-between;
-  position: relative;
   overflow: hidden;
 }
 
+
 #header .header-top .trending{
-  position: absolute;
-  top: 0px;
-  height: 300px;
+  transition: all 0.5s ease;
+  transform: translateY(0px);
+  cursor: pointer;
+  user-select: none;
 }
 
 #header .trending > li{
@@ -56,19 +58,35 @@
   font-size: 20px;
 }
 
-#header .trending span{
+#header .trending a{
   color: #333;
   font-size: 16px;
   line-height: 30px;
   margin-left: 5px;
 }
 
+#header .trending a:hover{
+  text-decoration: underline;
+}
 
+#header .inner .show-btn{
+  margin: auto 5px;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  color: #A0522D;
+}
 
 #header .inner .login-nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: auto;
+  user-select: none;
 }
 
 #header .login-nav > li:after{
@@ -86,7 +104,6 @@
 }
 
 
-
 #header .header-mid > .inner{
   align-items: center;
   justify-content: space-between;
@@ -98,6 +115,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  user-select: none;
 }
 
 #header .logo h1{
@@ -114,6 +132,7 @@
   display: flex;
   border: 3px solid #32CD32;
   border-radius: 10px;
+  align-items: center;
 }
 
 #header .search > *{
@@ -125,6 +144,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  user-select: none;
 }
 
 #header .category span{
@@ -132,14 +152,15 @@
 }
 
 #header .category .btn{
-  transform: rotate(90deg);
+  user-select: none;
+  cursor: pointer;
 }
 
 #header .inner .text-input{
   display: inline-block;
   width: 350px;
-  height: 44px;
-  font-size: 16px;
+  height: 46px;
+  font-size: 20px;
   border: none;
   outline: none;
 }
@@ -181,9 +202,12 @@
 #header .main-nav .first-li{
   width: 110px;
   background-color: #A0522D;
+}
+
+#header .main-nav .first-li a{
   color: #fff;
 }
 
-#header .main-nav .main-li{
+#header .main-nav .main-li a{
   color: #A0522D;
 }

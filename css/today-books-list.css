@@ -28,3 +28,31 @@ figcaption{
   font-size: 18px;
   font-weight: 700;
 }
+
+@media screen and (max-width : 509px) {
+  ul{
+    width: 150vw;
+  }
+  article{
+    width: 20vw;
+    height: 200px;
+  }
+  figcaption{
+    bottom: 20px;
+    height: 32px;
+    overflow: hidden;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width : 350px) {
+  article{
+    height: 150px;
+  }
+  figcaption{
+    bottom: 10px;
+    height: 28px;
+    overflow: hidden;
+    font-size: 14px;
+  }
+}

@@ -9,10 +9,17 @@
   height: auto;
   top: 35px;
   z-index: 100;
-  border: 2px solid #32cd32;
   border-radius: 10px;
   background-color: #fff;
-  display: none;
+  max-height: 0px;
+  border: 2px solid transparent;
+  transition: max-height 0.3s ease, border 0.3s ease;
+  overflow: hidden;
+}
+
+.trending-hidden-div.show{
+  max-height: 350px;
+  border: 2px solid #32cd32;
 }
 
 .trending-hidden-div h4{
@@ -26,6 +33,8 @@
   margin-bottom: 10px;
   width: 100%;
   height: 300px;
+  cursor: pointer;
+  user-select: none;
 }
 
 .trending-hidden > li{
@@ -46,11 +55,15 @@
   font-size: 20px;
 }
 
-.trending-hidden span{
+.trending-hidden a{
   color: #333;
   font-size: 16px;
   line-height: 30px;
   margin-left: 5px;
+}
+
+.trending-hidden a:hover{
+  text-decoration: underline;
 }
 
 .resent-hidden-div{
@@ -311,12 +324,24 @@
   height: auto;
   top: 110px;
   left: 290px;
+  border: 2px solid transparent;
   z-index: 100;
-  border: 2px solid #32cd32;
   border-radius: 10px;
   background-color: #fff;
   display: flex;
   flex-wrap: wrap;
+  transition: all 0.5s ease;
+  max-height: 0px;
+  overflow: hidden;
+}
+
+.category-hidden-div.show{
+  max-height: 300px;
+  border: 2px solid #32cd32;
+}
+
+.category-hidden-div.none{
+  max-height: 0px;
   display: none;
 }
 
@@ -329,17 +354,28 @@
   font-weight: 400;
   font-size: 16px;
   color: #666;
+  cursor: pointer;
+}
+
+.category-hidden-div li.select{
+  font-weight: 700;
+  color: #333;
+}
+
+.category-hidden-div li:hover{
+  text-decoration: underline;
 }
 
 .field-hidden-div{
   position: absolute;
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   height: 420px;
   top: 160px;
   left: 0px;
   z-index: 100;
   display: flex;
-  /* display: none; */
+  display: none;
 }
 
 .field-hidden-div .head{

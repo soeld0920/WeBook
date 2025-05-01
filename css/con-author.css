@@ -89,7 +89,8 @@
 
 #contents .author-life .body ul{
   position: absolute;
-  left: calc(31.5px - 831.5px);
+  left: -155%; 
+  /* 10%, -72.5%,  -155%*/
   width: 1263px;
   height: 120px;
   display: flex;
